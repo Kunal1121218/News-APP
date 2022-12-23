@@ -16,7 +16,7 @@ export default function News({ pageSize, country, category, title }) {
     (async () => {
       setLoad(true);
       let data = await fetch(
-        `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=1592c5d1cebc450fbf077f986dbc51f9&page=${page}&pageSize=${pageSize}`
+        `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=c715135d6bcb4cc3bad8116a2cc66e1c&page=${page}&pageSize=${pageSize}`
       );
       let res = await data.json();
       if (res.status !== "ok") setFetched(false);
